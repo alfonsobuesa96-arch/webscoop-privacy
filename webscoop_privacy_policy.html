@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebScoop — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #222; line-height: 1.7; }
+    h1 { color: #00c9a7; font-size: 2rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 2rem; color: #003d30; }
+    .subtitle { color: #666; margin-bottom: 2.5rem; font-size: 0.95rem; }
+    p, li { font-size: 0.97rem; }
+    ul { padding-left: 1.4rem; }
+    a { color: #00c9a7; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #eee; color: #999; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+<h1>WebScoop</h1>
+<p class="subtitle">Privacy Policy · Last updated: June 13, 2026</p>
+
+<p>WebScoop ("the Extension") is a Chrome browser extension that extracts web content from pages you visit and saves it locally as a ZIP file. This policy explains how the Extension handles your data.</p>
+
+<h2>1. Data We Collect</h2>
+<p>WebScoop does <strong>not</strong> collect, transmit, or store any personal data on external servers. All processing happens locally inside your browser.</p>
+<p>The Extension reads the content of web pages you actively choose to extract (text, images, links, metadata, cookies, etc.) solely to produce the ZIP file you download. This content never leaves your device.</p>
+
+<h2>2. Data Storage</h2>
+<p>The Extension stores the following data locally in your browser using <code>chrome.storage.local</code>:</p>
+<ul>
+  <li><strong>Extraction history</strong> — a list of the last 50 URLs you extracted (title, domain, date). Stored only on your device and never synced or shared.</li>
+  <li><strong>User preferences</strong> — your selected extraction options (which content types to include). Stored only on your device.</li>
+</ul>
+<p>You can clear this data at any time from the Extension's History tab.</p>
+
+<h2>3. Permissions Used</h2>
+<p>WebScoop requests the following Chrome permissions and uses them solely to perform the extraction you request:</p>
+<ul>
+  <li><strong>activeTab / tabs</strong> — to read the content of the current tab when you click Extract.</li>
+  <li><strong>scripting</strong> — to inject content scripts that extract page data.</li>
+  <li><strong>cookies</strong> — to export the cookies of the page you are extracting, if you enable that option.</li>
+  <li><strong>downloads</strong> — to save the generated ZIP file to your Downloads folder.</li>
+  <li><strong>storage</strong> — to save your preferences and history locally.</li>
+  <li><strong>contextMenus</strong> — to add the "Extract with WebScoop" option to the right-click menu.</li>
+  <li><strong>notifications</strong> — to notify you when an extraction is complete.</li>
+  <li><strong>clipboardWrite</strong> — to copy Markdown to your clipboard when you use the Copy Markdown feature.</li>
+  <li><strong>host_permissions (&lt;all_urls&gt;)</strong> — required to extract content from any webpage you visit.</li>
+</ul>
+
+<h2>4. Third-Party Services</h2>
+<p>WebScoop does not use any third-party analytics, tracking, advertising, or telemetry services. No data is sent to any external server.</p>
+<p>The Extension uses the following open-source libraries, which run entirely in your browser:</p>
+<ul>
+  <li><a href="https://github.com/mozilla/readability" target="_blank">Mozilla Readability.js</a> — for clean article extraction.</li>
+  <li><a href="https://stuk.github.io/jszip/" target="_blank">JSZip</a> — for ZIP file creation.</li>
+</ul>
+
+<h2>5. Data Sharing</h2>
+<p>We do not sell, trade, rent, or share any user data with any third party. There is no user data to share.</p>
+
+<h2>6. Children's Privacy</h2>
+<p>WebScoop is not directed at children under 13. We do not knowingly collect any information from children.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>If we update this policy, we will update the "Last updated" date above. Continued use of the Extension after changes constitutes acceptance of the updated policy.</p>
+
+<h2>8. Contact</h2>
+<p>If you have questions about this privacy policy, please contact us at: <a href="mailto:alfonsobuesa96@gmail.com">alfonsobuesa96@gmail.com</a></p>
+
+<footer>
+  &copy; 2026 WebScoop. All rights reserved.
+</footer>
+
+</body>
+</html>
